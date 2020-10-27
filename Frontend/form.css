@@ -14,8 +14,8 @@
 	text-align: center;
 }
 
-.register-form input[type="text"]:focus,
-.register-form input[type="password"]:focus {
+.register-form input[type="text"],
+.register-form input[type="password"] {
 	font-family: "Roboto", sans-serif;
 	outline: 1;
 	background: #f2f2f2;
@@ -27,7 +27,8 @@
 	font-size: 14px;
 }
 
-.register-form input[type="submit"] {
+.register-form button[type="submit"],
+.register-form button[type="reset"] {
 	border: 0;
 	background: none;
 	display: block;
@@ -42,25 +43,7 @@
 	cursor: pointer;
 }
 
-.register-form input[type="submit"]:hover {
-	background: #ffc400;
-}
-
-.register-form input[type="reset"] {
-	border: 0;
-	background: none;
-	display: block;
-	margin: 20px auto;
-	text-align: center;
-	border: 3px solid #ffc400ec;
-	padding: 14px 40px;
-	outline: none;
-	color: white;
-	border-radius: 24px;
-	transition: 0.25px;
-	cursor: pointer;
-}
-
-.register-form input[type="reset"]:hover {
+.register-form button[type="submit"]:hover,
+.register-form button[type="reset"]:hover {
 	background: #ffc400;
 }
