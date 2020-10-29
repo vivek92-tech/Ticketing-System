@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form1</title>
     <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 </head>
 <body>
     
     <div class="registration-page">
         
-        <div class="form">
-            <h3>Form1</h3>
-           
+        <div class="form" id="form">
+            <div class= "title">
+                <h3>Form 1</h3>
+            </div>
             <form class="register-form" onsubmit="return formValid()" action="message.html">
-                <label for="username">Username:</label>
-                <input type="text" placeholder="Enter Username" id="user" required />
-                <label for="password">Password:</label> 
-                <input type="password" placeholder="password"  id="pass1" required/>
-                <label for="confirmPassword">Confirm Password:</label>           
-                <input type="password"  placeholder="confirm password" id="pass2" required/>
-                <button type="submit" id="submit">Submit</button>
-                <button type="reset" id="reset">Clear</button>
+                <div class="input_field">
+                    <label for="username">Username:</label>
+                    <input type="text" placeholder="enter username" id="user" required /> 
+                    
+                </div>
+                <div class="input_field">
+                    <label for="password">Password:</label> 
+                    <input type="password" placeholder="enter password"  id="pass1" required/>
+                   
+                </div>
+                <div class="input_field">
+                    <label for="confirmPassword">Confirm Password:</label>           
+                    <input type="password"  placeholder="confirm password" id="pass2" required/>
+                    
+                </div>
+                
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="reset" >Clear</button>
+                
             </form>
         </div>
      </div> 

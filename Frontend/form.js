@@ -16,7 +16,7 @@ function formValid()
     
         if (password1.length < 6 || password1.length > 20 ||  !( password1.match(letternum)))
         {
-            alert("Enter password in between 6 to 20 characters and only numbers and alphabets are accepted");
+            alert("Enter password in between 6 to 20 characters only, numbers and alphabets are accepted");
             return false;
         }
 
@@ -25,8 +25,8 @@ function formValid()
             return false;
         }
 
-        else{
+        
             return true;
-        }
+        
         
 }
